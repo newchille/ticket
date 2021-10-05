@@ -6,7 +6,6 @@ const connectDB = () => {
     pass: process.env.DB_PASSWORD,
     dbName: process.env.DB_NAME,
     auth: { authSource: "admin" },
-    useCreateIndex: true,
   });
 };
 

@@ -20,11 +20,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4000/api/tickets",
+					"raw": "localhost:5000/api/tickets",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "5000",
 					"path": [
 						"api",
 						"tickets"
@@ -57,11 +57,11 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:4000/api/tickets?status=pending",
+					"raw": "localhost:5000/api/tickets?status=pending",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "5000",
 					"path": [
 						"api",
 						"tickets"
@@ -91,11 +91,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4000/api/tickets/615c26716d61ca6bbe7c8452",
+					"raw": "localhost:5000/api/tickets/615c26716d61ca6bbe7c8452",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "5000",
 					"path": [
 						"api",
 						"tickets",

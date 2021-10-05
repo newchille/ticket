@@ -2,45 +2,56 @@
 
 # How to set up
 
-```bash
-npm install
-```
-
-# How to start docker
+Build ticket-backend image
 
 ```bash
-docker run --name ticket-mongo -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password -d mongo
+docker build -t docker-node-ticket .
 ```
 
-# How to start development
+Build docker-compose
 
 ```bash
-npm start
+docker-compose build
 ```
 
-## Features
+Run docker-compose
+
+```
+docker-compose up
+```
+
+# Features
 
 - Get list of tickets sort by status and lastest update.
   ```bash
-  Get localhost:4000/api/tickets
+  Get localhost:5000/api/tickets
   ```
 - Get list of tickets by status sort by lastest update.
 
   ```bash
-  Get localhost:4000/api/tickets?status=<status>
+  Get localhost:5000/api/tickets?status=<status>
   ```
 
-- Create ticket.
+- Create ticket need "title" field to create ticket.
 
   ```bash
-  POST localhost:4000/api/tickets
+  POST localhost:5000/api/tickets
   ```
 
-- Update ticket information & status.
+- Update ticket information such as title, description, contactInformation, status
   ```bash
-  PATCH localhost:4000/api/tickets/:id
+  PATCH localhost:5000/api/tickets/:id
   ```
 
-## Postman usage
+# Ticket schema
+
+title : string <b>(Required)</b>\
+ description : string\
+ contactInformation : string\
+ createdTimeStamp : Date (default = Date.now)\
+ updateTimeStamp : Date\
+ status : string (default = 'pending')
+
+# Postman usage
 
 - Import "Ticket API.postman_collection.json" to Postman
