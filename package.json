@@ -1,0 +1,30 @@
+{
+  "name": "ticket",
+  "version": "1.0.0",
+  "description": "backend server for ticket web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f ./env/.env.development nodemon --exec babel-node ./src/index.js"
+  },
+  "author": "Newchille",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "env": "^0.0.2",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/register": "^7.13.16",
+    "@babel/runtime": "^7.14.0",
+    "nodemon": "^2.0.13"
+  }
+}
